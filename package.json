@@ -1,0 +1,8 @@
+{
+  "name": "@tmkelly28/tk-css",
+  "version": "1.0.0",
+  "description": "CSS utilities",
+  "main": "style.css",
+  "author": "Tom Kelly",
+  "license": "ISC"
+}
