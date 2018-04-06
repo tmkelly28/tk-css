@@ -3,10 +3,14 @@
   box-sizing: border-box;
 }
 
-body {
+html,body {
   height: 100vh;
   width: 100vw;
+  min-height: 100%;
   margin: 0;
+  padding: 0;
+  color: #333;
+  letter-spacing: 0.09em;
 }
 
 .row {
@@ -64,13 +68,13 @@ body {
 .text-left {text-align: left;}
 
 /* colors */
-.red {color: #CF000F;}
-.orange {color: #EB6B56;}
-.yellow {color: #F7DF1E;}
-.green {color: #27AE60;}
+.red {color: #B52E31;}
+.orange {color: #F69D42;}
+.yellow {color: #F7DE3F;}
+.green {color: #49BB83;}
 .blue {color: #67DBFB;}
-.purple {color: #753ebd;}
-.violet {color: #462446;}
+.violet {color: #753ebd;}
+.purple {color: #772A7A;}
 .black {color: #000000;}
 .white {color: #ffffff;}
 .gray-2 {color: #222222;}
@@ -79,13 +83,13 @@ body {
 .gray-d {color: #dddddd;}
 .gray-e {color: #eeeeee;}
 
-.bg-red {background-color: #CF000F;}
-.bg-orange {background-color: #EB6B56;}
-.bg-yellow {background-color: #F7DF1E;}
-.bg-green {background-color: #27AE60;}
+.bg-red {background-color: #B52E31;}
+.bg-orange {background-color: #F69D42;}
+.bg-yellow {background-color: #F7DE3F;}
+.bg-green {background-color: #49BB83;}
 .bg-blue {background-color: #67DBFB;}
-.bg-purple {background-color: #753ebd;}
-.bg-violet {background-color: #462446;}
+.bg-violet {background-color: #753ebd;}
+.bg-purple {background-color: #772A7A;}
 .bg-black {background-color: #000000;}
 .bg-white {background-color: #ffffff;}
 .bg-gray-2 {background-color: #222222;}
@@ -94,24 +98,53 @@ body {
 .bg-gray-d {background-color: #dddddd;}
 .bg-gray-e {background-color: #eeeeee;}
 
+/* shapes */
+
+.rounded {border-radius: 3px;}
+.circle {border-radius: 50%;}
+
 /* buttons */
-.btn {
+button {
   border: none;
-  transition: all 0.75s ease;
+  transition: box-shadow 0.75s ease;
   outline: none;
   padding: 1em;
+  border-radius: 3px;
+  background-color: #67DBFB;
+  letter-spacing: 0.1em;
 }
-.rounded {border-radius: 3px;}
+
+button:hover {
+  box-shadow: 0 0 0.5pt 0.5pt #CCCCCC;
+}
+
+button:disabled {
+  background-color: #333333;
+}
 
 /* inputs */
-.input {
+input[type=text],textarea {
   border: 1px solid #CCCCCC;
-  transition: all 0.25s ease;
+  transition: box-shadow 0.25s ease;
   padding: 0.75em;
+  border-radius: 3px;
 }
-.input:focus {
+input[type=text]:focus,textarea:focus {
   outline: none;
   box-shadow: 0 0 0.5pt 0.5pt #CCCCCC;
+}
+
+input[type=radio] {
+  margin-right: 1em;
+}
+
+select {
+  height: 2.5em;
+}
+
+/* forms */
+form > * {
+  margin: 1em;
 }
 
 /* margin */
