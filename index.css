@@ -106,7 +106,7 @@ html,body {
 /* buttons */
 button {
   border: none;
-  transition: box-shadow 0.75s ease;
+  transition: box-shadow 0.5s ease;
   outline: none;
   padding: 1em;
   border-radius: 3px;
