@@ -123,13 +123,13 @@ button:disabled {
 }
 
 /* inputs */
-input[type=text],textarea {
+input[type=text],input[type=email],input[type=password],textarea {
   border: 1px solid #CCCCCC;
   transition: box-shadow 0.25s ease;
   padding: 0.75em;
   border-radius: 3px;
 }
-input[type=text]:focus,textarea:focus {
+input[type=text]:focus,input[type=email],input[type=password],textarea:focus {
   outline: none;
   box-shadow: 0 0 0.5pt 0.5pt #CCCCCC;
 }
