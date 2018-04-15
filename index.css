@@ -129,7 +129,7 @@ input[type=text],input[type=email],input[type=password],textarea {
   padding: 0.75em;
   border-radius: 3px;
 }
-input[type=text]:focus,input[type=email],input[type=password],textarea:focus {
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,textarea:focus {
   outline: none;
   box-shadow: 0 0 0.5pt 0.5pt #CCCCCC;
 }
