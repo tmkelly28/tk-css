@@ -1,8 +1,17 @@
 {
   "name": "@tmkelly28/tk-css",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "CSS utilities",
   "main": "index.css",
   "author": "Tom Kelly",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "build": "postcss --use autoprefixer cssnano -o dist/tk-css.min.css ./src/index.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.3",
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.22",
+    "postcss-cli": "^5.0.1"
+  }
 }
